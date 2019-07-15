@@ -21,4 +21,10 @@ inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
+inoremap {<CR> {<CR>}<Esc>ko
 
+inoremap '<BS> <ESC>a
+inoremap "<BS> <ESC>a
+inoremap (<BS> <ESC>a
+inoremap [<BS> <ESC>a
+inoremap {<BS> <ESC>a
