@@ -17,6 +17,8 @@ set incsearch
 set mouse=a
 set clipboard=unnamedplus
 set pastetoggle=<C-p>
+set listchars=tab:>.,trail:~,extends:>,precedes:<
+set list
 
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
@@ -37,6 +39,7 @@ inoremap () ()
 inoremap [] []
 inoremap {} {}
 
+nnoremap <C-c> :set number!<CR>:set list!<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
 
