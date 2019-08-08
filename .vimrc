@@ -39,7 +39,7 @@ inoremap () ()
 inoremap [] []
 inoremap {} {}
 
-nnoremap <C-c> :set number!<CR>:set list!<CR>
+nnoremap <C-c> :set number!<CR>:set list!<CR>:GitGutterToggle<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
 
