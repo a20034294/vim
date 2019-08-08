@@ -24,6 +24,7 @@ set statusline=
 set statusline+=%1*\[%n]                                   "buffernr
 set statusline+=%1*\ %<%F\                                 "File+path
 set statusline+=%3*
+set statusline+=\ \ \ \ \ \ 
 set statusline+=%4*%=
 set statusline+=%5*\ %{''.(&fenc!=''?&fenc:&enc).''}\      "Encoding
 set statusline+=%5*\ %{(&bomb?\",BOM\":\"\")}\             "Encoding2
