@@ -20,6 +20,24 @@ set pastetoggle=<C-p>
 set listchars=tab:>.,trail:~,extends:>,precedes:<
 set list
 
+set statusline=
+set statusline+=%1*\[%n]                                   "buffernr
+set statusline+=%1*\ %<%F\                                 "File+path
+set statusline+=%3*
+set statusline+=%4*%=
+set statusline+=%5*\ %{''.(&fenc!=''?&fenc:&enc).''}\      "Encoding
+set statusline+=%5*\ %{(&bomb?\",BOM\":\"\")}\             "Encoding2
+set statusline+=%5*\ %{&ff}\                               "FileFormat (dos/unix..)
+set statusline+=%6*
+set statusline+=%7*\ line:%l/%L\ col:%3c\ (%3p%%)\         "Rownumber/total (%)
+hi User1 ctermfg=3  ctermbg=0
+hi User3 ctermfg=0
+hi User4 ctermfg=0
+hi User5            ctermbg=0
+hi User6 ctermfg=4  ctermbg=0
+hi User7 ctermfg=0  ctermbg=4
+set laststatus=2
+
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
