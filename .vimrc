@@ -39,25 +39,6 @@ hi User6 ctermfg=4  ctermbg=0
 hi User7 ctermfg=0  ctermbg=4
 set laststatus=2
 
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-inoremap {<CR> {<CR>}<Esc>ko
-
-inoremap '<BS> <ESC>a
-inoremap "<BS> <ESC>a
-inoremap (<BS> <ESC>a
-inoremap [<BS> <ESC>a
-inoremap {<BS> <ESC>a
-
-inoremap '' ''
-inoremap "" ""
-inoremap () ()
-inoremap [] []
-inoremap {} {}
-
 nnoremap <C-c> :set number!<CR>:set list!<CR>:GitGutterToggle<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
