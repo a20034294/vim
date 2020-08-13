@@ -15,7 +15,11 @@ set history=500
 set number
 set incsearch
 set mouse=a
-set clipboard=unnamedplus
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 set pastetoggle=<C-p>
 set listchars=tab:>.,trail:~,extends:>,precedes:<
 set list
